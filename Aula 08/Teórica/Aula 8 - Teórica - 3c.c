@@ -8,7 +8,6 @@ void tabuada(int n) {
         printf("%d x %d = %d\n", n, i, n*i);
     }
 }
-
 int main() {
     int valor;
     while (1) {
