@@ -180,19 +180,19 @@ int main()
 
 void situacao(float nota) 
 {
-    while (nota>=0 && nota<=100) {
-        
-    	if(nota>=70 && nota<101)
+		if(nota>=70 && nota<101)
 		{
 			printf("Aprovado\n");
-			break;
 		}
-		if (nota < 70 && nota>=0)
-		{
+		else {
+		    if (nota < 70 && nota>=0) {
 			printf("Reprovado\n");
-			break;
 		}
-    }
+		    else 
+    	{
+    		printf("Valor Invalida\n");
+		}
+		}
 }
 
 int main()
