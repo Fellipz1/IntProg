@@ -13,8 +13,6 @@ void Tabuada (int z, int conta)
     }
     return;
 }
-
-
 int main()
 {
     printf("Tabuada de 1 a 9:\n");
