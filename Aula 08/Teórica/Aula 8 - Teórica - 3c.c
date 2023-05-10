@@ -3,11 +3,13 @@
 #include <stdio.h>
 
 void tabuada(int n) {
-    int i;
-    for (i = 1; i <= 10; i++) {
-        printf("%d x %d = %d\n", n, i, n*i);
+    int i = 1;
+    while (i <= 10) {
+        printf("%d x %d = %d\n", n, i, n * i);
+        i++;
     }
 }
+
 int main() {
     int valor;
     while (1) {
