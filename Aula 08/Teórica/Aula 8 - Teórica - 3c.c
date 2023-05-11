@@ -12,13 +12,13 @@ void tabuada(int n) {
 
 int main() {
     int valor;
-    while (1) {
+    printf("Digite um valor inteiro: ");
+    scanf("%d", &valor);	
+	    
+    while (valor!=0) {
+    	tabuada(valor);
         printf("Digite um valor inteiro (ou 0 para sair): ");
         scanf("%d", &valor);
-        if (valor == 0) {
-            break;
-        }
-        tabuada(valor);
     }
     return 0;
 }
