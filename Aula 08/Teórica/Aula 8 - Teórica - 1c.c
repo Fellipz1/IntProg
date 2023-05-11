@@ -1,39 +1,41 @@
 // c) Reescreva o programa para que o usuário comece informando o número de alunos. Neste caso, a quantidade de notas lidas deve ser igual ao número informado. Teste seu programa com: 3 64 92 31
 
 #include <stdio.h>
-
-void situacao(float nota) 
+void situacao (int cont, int valor)
 {
-    while (nota>=0 && nota<=100) {
+cont=0;
+   while (cont<valor)
+    {
+        float n;
         
-    	if(nota>=70 && nota<101)
-		{
-			printf("Aprovado\n");
-			break;
-		}
-		if (nota < 70 && nota>=0)
-		{
-			printf("Reprovado\n");
-			break;
-		}
+        printf("Digite outra nota: ");
+        scanf("%f", &n);
+        
+        if (n>=70 && n<=100)
+        {
+        	printf("Aprovado\n");
+        }
+      	else {
+          	if (n <70 && n>=0) {
+              printf("Reprovado\n");
+          	}
+          	else {
+   
+           printf("Nota invalida\n");
+          }
+      	}
+    	cont++;
     }
 }
-
 int main()
 {
-	int valor=0, cont=0;
-	float nota;
+	int valor, cont=0;
+	float n;
 	
 	printf("Digite quantas notas voce precisa: \n");
-    	scanf("%d", &valor);
-	   
-   	 while (cont<valor)
-    	{
-    		printf("Digite a nota do aluno: \n");
- 		scanf("%f", &nota);
-		situacao(nota);
-	
-		cont++;
-	}
-    	return 0;
+    scanf("%d", &valor);
+    
+    situacao(cont, valor);
+
+    return 0;
 }
