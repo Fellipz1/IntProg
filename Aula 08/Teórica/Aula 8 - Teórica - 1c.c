@@ -1,4 +1,4 @@
-// c) Reescreva o programa para que o usuário comece informando o número de alunos. Neste caso, a quantidade de notas lidas deve ser igual ao número informado. Teste seu programa com: 3 64 92 31
+// c) Reescreva o programa para que o usuÃ¡rio comece informando o nÃºmero de alunos. Neste caso, a quantidade de notas lidas deve ser igual ao nÃºmero informado. Teste seu programa com: 3 64 92 31
 
 #include <stdio.h>
 
@@ -25,15 +25,15 @@ int main()
 	float nota;
 	
 	printf("Digite quantas notas voce precisa: \n");
-    scanf("%d", &valor);
+    	scanf("%d", &valor);
 	   
-    while (cont<valor)
-    {
-    	printf("Digite a nota do aluno: \n");
+   	 while (cont<valor)
+    	{
+    		printf("Digite a nota do aluno: \n");
  		scanf("%f", &nota);
 		situacao(nota);
 	
 		cont++;
 	}
-    return 0;
+    	return 0;
 }
