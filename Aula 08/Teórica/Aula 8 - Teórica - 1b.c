@@ -7,39 +7,17 @@ int main()
     
     printf("Digite sua nota: ");
     scanf ("%f",&n);
-    
-    if (n>=70 && n<=100)
-    {
-		printf("Aprovado\n");
-    }
-      	else {
-        	if (n<70 && n>=0){
-              printf("Reprovado\n");
-          	}
-          	else {
-              printf ("Nota invalida\n");
-          	}
-      	}
-   while (n>=0 && n <=100)
-    {
-        float n;
-        
-        printf("Digite outra nota: ");
-        scanf("%f", &n);
-        
-        if (n>=70 && n<=100)
+	while (n>=0 && n <=100)
+    {        
+        if (n>=70 )
         {
         	printf("Aprovado\n");
         }
-      	else {
-          	if (n <70 && n>=0) {
-              printf("Reprovado\n");
-          	}
-          	else {
-              printf("Nota invalida");
-              break;
-            }
-      	}
-    }
+      	else{
+   	    	printf("Reprovado\n");
+        }
+        printf("Digite outra nota: ");
+        scanf("%f", &n);
+	}
       return 0;
 }
