@@ -1,6 +1,6 @@
 // 2 - 
 /*
-		|main	|	funcao			|	
+	|main		|	funcao			|	
 Linha	|	a	|	a	|	b	|	Condicao1		|	Condicao 2		|
 13	|	?	|	?	|	?	|				|				|
 15	|	4	|	?	|	?	|				|				|
