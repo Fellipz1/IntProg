@@ -22,17 +22,17 @@ int main()
       	}
    while (n>=0 && n <=100)
     {
-        float nota;
+        float n;
         
         printf("Digite outra nota: ");
-        scanf("%f", &nota);
+        scanf("%f", &n);
         
-        if (nota>=70 && nota<=100)
+        if (n>=70 && n<=100)
         {
         	printf("Aprovado\n");
         }
       	else {
-          	if (nota <70 && n>=0) {
+          	if (n <70 && n>=0) {
               printf("Reprovado\n");
           	}
           	else {
