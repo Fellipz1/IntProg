@@ -1,5 +1,5 @@
-// 4 - a - Escreva uma funÁ„o que lÍ um caractere do teclado que indique o sexo de uma pessoa. A funÁ„o deve retornar apenas o valor 'F' ou o valor 'M', por isso, enquanto o usu·rio digitar um valor inv·lido, 
-// a funÁ„o deve solicitar que ele digite um destes dois valores.
+// 4 - a - Escreva uma fun√ß√£o que l√™ um caractere do teclado que indique o sexo de uma pessoa. A fun√ß√£o deve retornar apenas o valor 'F' ou o valor 'M', por isso, enquanto o usu√°rio digitar um valor inv√°lido, 
+// a fun√ß√£o deve solicitar que ele digite um destes dois valores.
 
 /*
 #include <stdio.h>
@@ -28,8 +28,8 @@ int main()
 }
 */
 
-// 4 - b - Escreva uma funÁ„o que leia um valor inteiro do teclado representando a idade de uma pessoa. Espera-se que a funÁ„o retorne um valor entre 0 e 130.
-// Assim, enquanto o usu·rio digitar um valor inv·lido, a funÁ„o deve solicitar novamente o valor.
+// 4 - b - Escreva uma fun√ß√£o que leia um valor inteiro do teclado representando a idade de uma pessoa. Espera-se que a fun√ß√£o retorne um valor entre 0 e 130.
+// Assim, enquanto o usu√°rio digitar um valor inv√°lido, a fun√ß√£o deve solicitar novamente o valor.
 /*
 #include <stdio.h>
 
@@ -60,7 +60,7 @@ int main()
 }
 */
 
-// 4 - c - Escreva um programa que leia o sexo e a idade de 15 pessoas, chamando as funÁıes desenvolvidas acima para garantir que ser„o informados dados v·lidos.
+// 4 - c - Escreva um programa que leia o sexo e a idade de 15 pessoas, chamando as fun√ß√µes desenvolvidas acima para garantir que ser√£o informados dados v√°lidos.
 /*
 #include <stdio.h>
 
@@ -120,25 +120,26 @@ int main()
 }
 */
 
-// 5 - Escreva uma funÁ„o que recebe como par‚metro um n˙mero inteiro n. A funÁ„o deve ler n valores do teclado e retornar quantos destes valores s„o negativos.
-// FaÁa tambÈm um programa principal que leia do teclado o que for necess·rio para executar a chamada correta desta funÁ„o e imprimir seu resultado na tela.
+// 5 - Escreva uma fun√ß√£o que recebe como par√¢metro um n√∫mero inteiro n. A fun√ß√£o deve ler n valores do teclado e retornar quantos destes valores s√£o negativos.
+// Fa√ßa tamb√©m um programa principal que leia do teclado o que for necess√°rio para executar a chamada correta desta fun√ß√£o e imprimir seu resultado na tela.
 
 /*
 #include <stdio.h>
 
 int contarNegativos(int n)
 {
-	int i, valor, cont = 0;
+	int x, valor, cont = 0;
 
-    for (i = 0; i < n; i++)
+    while ( x < n)
     {
-        printf("Digite o valor %d: ", i + 1);
-        scanf("%d", &valor);
+        printf("Digite o valor %d: ", x + 1); // x √© o valor do numero se ele √© o primeiro, o segundo ou terceiro
+        scanf("%d", &valor); // valor √© o que estamos comparando 
 
         if (valor < 0)
         {
             cont++;
         }
+        x++;
     }
     return cont;
 }
@@ -148,7 +149,7 @@ int main()
     int n, negativos;
 
     printf("Digite a quantidade de valores: ");
-    scanf("%d", &n);
+    scanf("%d", &n); // quantidade de valores que o usuario ir√° digitar
 
     negativos = contarNegativos(n);
 
@@ -158,9 +159,9 @@ int main()
 }
 */
 
-// 6 - Escreva uma funÁ„o que leia os valores n1 e n2 e imprima o intervalo fechado entre esses dois valores. 
-// Exemplo: se os valores lidos forem 5 e 2, a saÌda dever· ser 5 4 3 2.
-// FaÁa tambÈm um programa principal que leia do teclado o que for necess·rio para executar a chamada correta desta funÁ„o.
+// 6 - Escreva uma fun√ß√£o que leia os valores n1 e n2 e imprima o intervalo fechado entre esses dois valores. 
+// Exemplo: se os valores lidos forem 5 e 2, a sa√≠da dever√° ser 5 4 3 2.
+// Fa√ßa tamb√©m um programa principal que leia do teclado o que for necess√°rio para executar a chamada correta desta fun√ß√£o.
 
 /*
 #include <stdio.h>
@@ -202,10 +203,38 @@ int main()
 }
 */
 
-// 7 - a) Escreva uma funÁ„o que recebe um inteiro N como par‚metro e imprime uma linha contendo os n˙meros de 1 atÈ N. Por exemplo, se o valor do par‚metro for 6, a funÁ„o dever· imprimir: 1 2 3 4 5 6
-// b) FaÁa um programa para testar a funÁ„o, solicitando que o usu·rio digite o valor de N.
-// c) RefaÁa seu programa para que, apÛs o usu·rio digitar o valor de N (por exemplo, 6), o programa imprima o tri‚ngulo:
+// 7 - a) Escreva uma fun√ß√£o que recebe um inteiro N como par√¢metro e imprime uma linha contendo os n√∫meros de 1 at√© N. Por exemplo, se o valor do par√¢metro for 6, a fun√ß√£o dever√° imprimir: 1 2 3 4 5 6
+// b) Fa√ßa um programa para testar a fun√ß√£o, solicitando que o usu√°rio digite o valor de N.
+/*
+#include <stdio.h>
 
+void imprimirLinha(int N)
+{
+    int x = 1;
+
+    while (x <= N)
+    {
+        printf("%d ", x);
+        x++;
+    }
+
+    printf("\n");
+}
+int main()
+{
+    int N;
+
+    printf("Digite o valor de N: ");
+    scanf("%d", &N);
+
+    printf("Linha: ");
+    imprimirLinha(N);
+
+    return 0;
+}
+*/
+
+// c) Refa√ßa seu programa para que, ap√≥s o usu√°rio digitar o valor de N (por exemplo, 6), o programa imprima o tri√¢ngulo:
 /*
 #include <stdio.h>
 
@@ -258,11 +287,46 @@ int main()
 }
 */
 
-// 8 -Uma empresa tem 30 funcion·rios e resolveu conceder a todos um auxÌlio mensal de R$60,00 por mÍs para cada dependente menor de 18 anos. 
-// Escreva um programa que, para cada um dos 30 funcion·rios, leia seu n˙mero de dependentes. Em seguida, o programa deve ler a idade de cada dependente e imprimir o valor total do auxÌlio que este funcion·rio receber·.
-// VocÍ pode criar funÁıes, se achar necess·rio.
-// Obs: Precisar· de mais contadores. Analise bem o problema.
+// 8 -Uma empresa tem 30 funcion√°rios e resolveu conceder a todos um aux√≠lio mensal de R$60,00 por m√™s para cada dependente menor de 18 anos. 
+// Escreva um programa que, para cada um dos 30 funcion√°rios, leia seu n√∫mero de dependentes. Em seguida, o programa deve ler a idade de cada dependente e imprimir o valor total do aux√≠lio que este funcion√°rio receber√°.
+// Voc√™ pode criar fun√ß√µes, se achar necess√°rio.
+// Obs: Precisar√° de mais contadores. Analise bem o problema.
 
+/*
+#include <stdio.h>
+
+int main() {
+	int numFuncionarios = 30;
+	int auxilioDependente = 60;
+    int numDependentes, idade, totalAuxilio;
+    int funcionario = 1;
+
+    while (funcionario <= numFuncionarios) {
+        printf("Funcionario %d\n", funcionario);
+        printf("Digite o numero de dependentes: ");
+        scanf("%d", &numDependentes);
+
+        totalAuxilio = 0;
+        int pd = 1;
+
+        while (pd <= numDependentes) {
+            printf("Digite a idade do dependente %d: ", pd);
+            scanf("%d", &idade);
+
+            if (idade < 18) {
+                totalAuxilio += auxilioDependente;
+            }
+
+            pd++;
+        }
+
+        printf("Total de auxilio para o funcionario %d: R$%d\n\n", funcionario, totalAuxilio);
+        funcionario++;
+    }
+
+    return 0;
+}
+*/
 
 
 
