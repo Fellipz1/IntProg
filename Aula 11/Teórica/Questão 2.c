@@ -3,7 +3,7 @@
 #include <stdio.h>	
 float media (int n)
 {
-	int i = 1;
+	int i;
 	float soma, media, num;
 	soma = 0;
 	
