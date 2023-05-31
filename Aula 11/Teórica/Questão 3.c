@@ -4,8 +4,8 @@
 
 float fatorial(int n) {
     int valor_final = n;
-
-    for (int i = 1; i < n; i++) 
+	int i;
+    for (i = 1; i < n; i++) 
 	{
         valor_final = (valor_final * (n - i));
     }
