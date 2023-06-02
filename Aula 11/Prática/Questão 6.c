@@ -1,21 +1,21 @@
 // 6- Escreva um programa que leia 10 valores (usando a 
-// mesma vari·vel) e encontre o maior e o menor deles. 
+// mesma vari√°vel) e encontre o maior e o menor deles. 
 // Mostre o resultado.
 
 #include<stdio.h>
 
 void maiorEmenor()
 {
-	int i, valor, maior, menor;
+	float i, valor, maior, menor;
 	
 	printf("Digite 10 valores inteiros:\n");
 	
-	scanf("%d", &valor);
+	scanf("%f", &valor);
 	maior = valor;
 	menor = valor;
 	
 	for (i = 1; i < 10; i++) {
-	    scanf("%d", &valor);
+	    scanf("%f", &valor);
 	    
 	    if (valor > maior) {
 	        maior = valor;
@@ -26,8 +26,8 @@ void maiorEmenor()
 	    }
 	}
 	
-	printf("O maior valor digitado foi: %d\n", maior);
-	printf("O menor valor digitado foi: %d\n", menor);
+	printf("O maior valor digitado foi: %f\n", maior);
+	printf("O menor valor digitado foi: %f\n", menor);
 	
 }
 int main() 
