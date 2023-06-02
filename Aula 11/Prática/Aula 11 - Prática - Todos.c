@@ -1,7 +1,7 @@
-// 4- Chico tem 1,50 metro e cresce 2 centímetros por ano, 
-// enquanto Zé tem 1,40 metro e cresce 3 centímetros por 
+// 4- Chico tem 1,50 metro e cresce 2 centÃ­metros por ano, 
+// enquanto ZÃ© tem 1,40 metro e cresce 3 centÃ­metros por 
 // ano. Construa um programa que calcule e imprima 
-// quantos anos serão necessários para que Zé seja maior 
+// quantos anos serÃ£o necessÃ¡rios para que ZÃ© seja maior 
 // que Chico. Use o comando do-while.
 
 /*
@@ -37,9 +37,9 @@ int main ()
 }
 */
 
-// 5- Escrever um função que lê um valor N inteiro e positivo 
-// e que calcula e escreve o valor de E. Faça um programa 
-// para testar sua função. E = 1 + 1/2 + 1/3 + ... + 1/N
+// 5- Escrever um funÃ§Ã£o que lÃª um valor N inteiro e positivo 
+// e que calcula e escreve o valor de E. FaÃ§a um programa 
+// para testar sua funÃ§Ã£o. E = 1 + 1/2 + 1/3 + ... + 1/N
 
 /*
 #include <stdio.h>
@@ -77,7 +77,7 @@ int main()
 */
 
 // 6- Escreva um programa que leia 10 valores (usando a 
-// mesma variável) e encontre o maior e o menor deles. 
+// mesma variÃ¡vel) e encontre o maior e o menor deles. 
 // Mostre o resultado.
 
 /*
@@ -85,16 +85,16 @@ int main()
 
 void maiorEmenor()
 {
-	int i, valor, maior, menor;
+	float i, valor, maior, menor;
 	
 	printf("Digite 10 valores inteiros:\n");
 	
-	scanf("%d", &valor);
+	scanf("%f", &valor);
 	maior = valor;
 	menor = valor;
 	
 	for (i = 1; i < 10; i++) {
-	    scanf("%d", &valor);
+	    scanf("%f", &valor);
 	    
 	    if (valor > maior) {
 	        maior = valor;
@@ -105,8 +105,8 @@ void maiorEmenor()
 	    }
 	}
 	
-	printf("O maior valor digitado foi: %d\n", maior);
-	printf("O menor valor digitado foi: %d\n", menor);
+	printf("O maior valor digitado foi: %f\n", maior);
+	printf("O menor valor digitado foi: %f\n", menor);
 	
 }
 int main() 
@@ -116,9 +116,9 @@ int main()
 }
 */
 
-// 7- Usando uma função que converta graus Fahrenheit em 
-// Celsius (fórmula C=5*(F – 32)/9 ), escreva um programa 
-// que construa uma tabela de graus Celsius em função de 
+// 7- Usando uma funÃ§Ã£o que converta graus Fahrenheit em 
+// Celsius (fÃ³rmula C=5*(F â€“ 32)/9 ), escreva um programa 
+// que construa uma tabela de graus Celsius em funÃ§Ã£o de 
 // Fahrenheit, de 50oF a 150oF, variando de 1 em 1. Use o 
 // comando for.
 
@@ -144,10 +144,10 @@ int main() {
 }
 */
 
-// 8- Faça um programa que leia um inteiro positivo 
-// x e imprima todas as potências de 2 no intervalo 
-// entre 0 e x. Use uma variável acumuladora para 
-// calcular a potência de 2.
+// 8- FaÃ§a um programa que leia um inteiro positivo 
+// x e imprima todas as potÃªncias de 2 no intervalo 
+// entre 0 e x. Use uma variÃ¡vel acumuladora para 
+// calcular a potÃªncia de 2.
 // Teste seu programa com o valor: 21
 
 /*
