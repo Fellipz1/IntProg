@@ -1,5 +1,5 @@
 // Lista 2 
-// Fellipe de Sá Moraes - Inicio: 26/05/2023 - Fim: 
+// Fellipe de Sá Moraes - Inicio: 26/05/2023 - Fim: 18/06/2023
 
 // 1 - Faça uma função que receba dois números X e Y, sendo X < Y. Calcule e imprima:
 // – a soma de números pares desse intervalo de números, incluindo os números digitados;
@@ -51,11 +51,14 @@ int main()
 /*
 #include <stdio.h>
 
-float calcularMedia(int quantidadeAlunos) {
+float calcularMedia(int quantidadeAlunos) 
+{
     float somaNotas = 0;
     float nota;
+    int cont;
     
-    for (int cont = 1; cont <= quantidadeAlunos; cont++) {
+    for (cont = 1; cont <= quantidadeAlunos; cont++) 
+	{
         printf("Digite a nota do aluno %d: ", cont);
         scanf("%f", &nota);
         somaNotas += nota;
@@ -65,7 +68,8 @@ float calcularMedia(int quantidadeAlunos) {
     return media;
 }
 
-int main() {
+int main() 
+{
     int quantidadeAlunos;
     
     printf("Digite a quantidade de alunos na sala: ");
@@ -121,10 +125,12 @@ int main()
 /*
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     printf("Numeros de 1000 a 1999 que divididos por 11 têm resto igual a 5:\n");
     
-    for (int i = 1000; i <= 1999; i++) {
+    for (int i = 1000; i <= 1999; i++) 
+	{
         if (i % 11 == 5) {
             printf("%d,", i);
         }
@@ -139,17 +145,21 @@ int main() {
 /*
 #include <stdio.h>
 
-void divisores(int numero) {
+void divisores(int numero) 
+{
     printf("Divisores de %d:\n", numero);
     
-    for (int cont = 1; cont <= numero; cont++) {
-        if (numero % cont == 0) {
+    for (int cont = 1; cont <= numero; cont++) 
+	{
+        if (numero % cont == 0) 
+		{
             printf("%d,", cont);
         }
     }
 }
 
-int main() {
+int main() 
+{
     int numero;
     
     printf("Digite um numero inteiro: ");
@@ -169,7 +179,8 @@ int main() {
 /*
 #include <stdio.h>
 
-void media_intervalo(float a, float b) {
+void media_intervalo(float a, float b) 
+{
     float valor, soma = 0.0;
     int quantidade = 0;
     int validos = 0;
@@ -179,7 +190,8 @@ void media_intervalo(float a, float b) {
     scanf("%f", &valor);
 	if (b>a){
 		while (valor >= 0) {
-        if (valor <= b && valor >= a ) {
+        if (valor <= b && valor >= a ) 
+		{
             soma += valor;
             validos++;
         }
@@ -189,9 +201,12 @@ void media_intervalo(float a, float b) {
         scanf("%f", &valor);
     	}
 	}
-    else {
-    	while (valor >= 0) {
-        if (valor >= b && valor <= a ) {
+    else 
+	{
+    	while (valor >= 0) 
+		{
+        if (valor >= b && valor <= a ) 
+		{
             soma += valor;
             validos++;
         }
@@ -202,15 +217,18 @@ void media_intervalo(float a, float b) {
     	}
 	}
 
-    if (validos > 0) {
+    if (validos > 0) 
+	{
         float media = soma / validos;
         printf("A media dos valores no intervalo [%.2f, %.2f] = %.2f\n", a, b, media);
-    } else {
+    } else 
+	{
         printf("Nao foram digitados valores no intervalo [%.2f, %.2f]\n", a, b);
     }
 }
 
-int main() {
+int main() 
+{
     float a, b;
 
     printf("Digite o valor de a: ");
@@ -280,7 +298,8 @@ int main()
 /*
 #include <stdio.h>
 
-void calcularEImprimirEstatisticas() {
+void calcularEImprimirEstatisticas() 
+{
     int valor;
     int soma = 0;
     int quantidadePositivos = 0;
@@ -427,7 +446,8 @@ int main()
 /*
 #include <stdio.h>
 
-float calcularSoma(int n) {
+float calcularSoma(int n) 
+{
 	int i;
     float soma = 0.0;
 
@@ -446,7 +466,8 @@ float calcularSoma(int n) {
     return soma;
 }
 
-int main() {
+int main() 
+{
     int n;
     float resultado;
 
@@ -468,7 +489,8 @@ int main() {
 /*
 #include <stdio.h>
 
-float calculaPI(int N) {
+float calculaPI(int N) 
+{
     float pi = 0.0;
     int sinal = -1;
     int i;
@@ -491,7 +513,8 @@ float calculaPI(int N) {
     return 4 * (-pi);
 }
 
-int main() {
+int main() 
+{
     int N;
     float resultado;
 
@@ -508,15 +531,260 @@ int main() {
 
 // 13 - Escreva uma função que receba um vetor de valores reais e seu tamanho e retorne quantos destes valores são negativos.
 
+/*
+#include <stdio.h>
+
+void negativos(float vetor[], int tamanho)
+{
+	int cont=0;
+	int i;
+	
+	for(i=0; i<tamanho;i++)
+	{
+		if (vetor[i]<0)
+		{
+			cont++;
+		}
+	}
+	printf("Temos %d, valores negativos",cont);
+}
+
+int main ()
+{
+	int tamanho=1; 
+	float vetor[tamanho];
+	int i; 
+	
+	printf("Digite o tamanho do vetor: \n");
+	scanf ("%d",&tamanho);
+	
+	for(i=0;i<tamanho;i++)
+	{
+		printf("Digite o %d valor do vetor:\n",i);
+		scanf("%f",&vetor[i]);
+	}
+	
+	negativos(vetor, tamanho);
+	
+	return 0;
+}
+*/
+
 // 14 - Implemente uma função que receba um vetor de inteiros e seu tamanho e retorne o maior elemento do vetor.
+
+/*
+#include <stdio.h>
+
+void maior(float vetor[], int tamanho)
+{
+	int valor_maior=0;
+	int i;
+	
+	for(i=0; i<tamanho;i++)
+	{
+		if (valor_maior<vetor[i])
+		{
+			valor_maior=vetor[i];
+		}
+	}
+	printf("O maior valor digitado foi %d",valor_maior);
+}
+
+int main ()
+{
+	int tamanho=1; 
+	float vetor[tamanho];
+	int i; 
+	
+	printf("Digite o tamanho do vetor: \n");
+	scanf ("%d",&tamanho);
+	
+	for(i=0;i<tamanho;i++)
+	{
+		printf("Digite o %d valor do vetor:\n",i);
+		scanf("%f",&vetor[i]);
+	}
+	
+	maior(vetor, tamanho);
+	
+	return 0;
+}
+*/
 
 // 15 - Implemente uma função que receba um vetor de inteiros e seu tamanho e ordene-o.
 
+// Não feito por conta da complexidade
+
 // 16 - Elabore uma função que recebe por parâmetro um vetor de inteiros e o seu tamanho e retorna a soma de seus elementos.
 
-// 17 - Implemente uma função que receba um vetor de inteiros, seu tamanho e um valor x e retorne o índice da primeira posição do vetor que contém o valor x. Se o valor x não estiver no vetor, a função deve retornar o valor -1.
+/*
+#include <stdio.h>
+
+void soma(float vetor[], int tamanho)
+{
+	int soma=0;
+	int i;
+	
+	for(i=0; i<tamanho;i++)
+	{
+		soma+=vetor[i];
+	}
+	printf("A soma dos elementos = %d",soma);
+}
+
+int main ()
+{
+	int tamanho=1; 
+	float vetor[tamanho];
+	int i; 
+	
+	printf("Digite o tamanho do vetor: \n");
+	scanf ("%d",&tamanho);
+	
+	for(i=0;i<tamanho;i++)
+	{
+		printf("Digite o %d valor do vetor:\n",i);
+		scanf("%f",&vetor[i]);
+	}
+	
+	soma(vetor, tamanho);
+	
+	return 0;
+}
+*/
+
+// 17 - Implemente uma função que receba um vetor de inteiros, seu tamanho e um valor x e retorne o índice da primeira posição do vetor que contém o valor x. 
+// Se o valor x não estiver no vetor, a função deve retornar o valor -1.
+
+/*
+#include <stdio.h>
+
+void encontrar(int vetor[], int tamanho, int x)
+{
+	int i;
+	int retorno=0;
+	
+	for(i=0; i<tamanho;i++)
+	{
+		if (x==vetor[i])
+		{
+			printf("%d", i);
+			retorno++;
+		}
+	}
+	if (retorno==0)
+		{
+			printf("-1");
+		}
+}
+
+int main ()
+{
+	int tamanho=1; 
+	int vetor[tamanho];
+	int i; 
+	int x;
+	
+	printf("Digite o tamanho do vetor: \n");
+	scanf ("%d",&tamanho);
+	
+	printf("Digite o valor do vetor que voce quer encontrar: \n");
+	scanf("%d",&x);
+	
+	for(i=0;i<tamanho;i++)
+	{
+		printf("Digite o %d valor do vetor:\n",i);
+		scanf("%d",&vetor[i]);
+	}
+	
+	encontrar(vetor, tamanho, x);
+	
+	return 0;
+}
+*/
 
 // 18 - Implemente uma função que, dados um vetor de valores reais e seu tamanho, retorne a média dos valores armazenados.
 
+/*
+#include <stdio.h>
+
+void media(float vetor[], int tamanho)
+{
+	int soma=0;
+	int i;
+	float media;
+	
+	for(i=0; i<tamanho;i++)
+	{
+		soma+=vetor[i];
+	}
+	media = (soma/tamanho);
+	printf("A media dos elementos = %.2f",media);
+}
+
+int main ()
+{
+	int tamanho=1; 
+	float vetor[tamanho];
+	int i; 
+	
+	printf("Digite o tamanho do vetor: \n");
+	scanf ("%d",&tamanho);
+	
+	for(i=0;i<tamanho;i++)
+	{
+		printf("Digite o %d valor do vetor:\n",i);
+		scanf("%f",&vetor[i]);
+	}
+	
+	media(vetor, tamanho);
+	
+	return 0;
+}
+*/
+
 // 19 - Escreva uma função que receba um vetor de valores reais e seu tamanho e leia valores do teclado para preencher todo o vetor apenas com valores positivos. Observe que valores negativos
 // devem ser ignorados e a leitura deve ser encerrada assim que a última posição do vetor for preenchida. 
+
+/*
+#include <stdio.h>
+
+void preencher(float vetor[], int tamanho) 
+{
+    int i;
+    float valor;
+	
+	i=0;
+    do 
+	{
+        printf("Digite o valor do vetor %d:\n",i);
+        scanf("%f", &valor);
+
+        if (valor > 0) 
+		{
+        vetor[i] = valor;
+    	i++;
+    	}
+	} while ( i < tamanho);
+}
+
+int main() {
+    int tamanho;
+	int i;
+	
+    printf("Digite o tamanho do vetor: ");
+    scanf("%d", &tamanho);
+
+    float vetor[tamanho];
+
+    preencher(vetor, tamanho);
+
+    printf("Valores do vetor preenchido apenas com valores positivos:\n");
+    for (i = 0; i < tamanho; i++)
+	{
+        printf("%.2f ", vetor[i]);
+    }
+
+    return 0;
+}
+*/
