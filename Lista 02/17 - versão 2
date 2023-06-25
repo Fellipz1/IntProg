@@ -1,0 +1,57 @@
+// 17 - Implemente uma função que receba um vetor de inteiros, seu tamanho e um valor x e retorne o índice da primeira posição do vetor que contém o valor x. 
+// Se o valor x não estiver no vetor, a função deve retornar o valor -1.
+
+#include <stdio.h>
+void media(float vetor[], int tamanho)
+{
+	int soma=0;
+	int i, quantidadeMaior, quantidadeMenor;
+	float media, v1, v2;
+	
+	for(i=0; i<tamanho;i++)
+	{
+		soma+=vetor[i];
+	}
+	media = (soma/tamanho);
+	printf("A media dos elementos = %.2f\n",media);
+
+	printf("Aqui estao os valores de v1, que sao os vetores acima da media\n");
+	for(i=0; i<tamanho; i++)
+	{
+		if (vetor[i]>media)
+		{
+			v1=vetor[i];
+			printf("Os elementos maiores que %.2f = %f\n", media, v1);
+			quantidadeMaior++;
+		}
+	}
+	printf("-----------------------------------------------------------\n");
+	printf("Aqui estao os valores de v2, que sao os vetores abaixo da media\n");
+	for(i=0; i<tamanho; i++)
+	{
+		if (vetor[i]<media)
+		{
+			v2=vetor[i];
+			printf("Os elementos menores que %.2f = %f\n", media, v2);
+			quantidadeMenor++;
+		}
+	}
+	printf("Quantidade de valores maiores que a media: %d\n", quantidadeMaior);
+    printf("Quantidade de valores menores que a media: %d\n", quantidadeMenor);
+}
+int main ()
+{
+	int tamanho=10; 
+	float vetor[tamanho];
+	int i; 
+	
+	for(i=0;i<tamanho;i++)
+	{
+		printf("Digite o %d valor do vetor:\n",i);
+		scanf("%f",&vetor[i]);
+	}
+	
+	media(vetor, tamanho);
+	
+	return 0;
+}
