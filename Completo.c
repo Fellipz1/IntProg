@@ -1,4 +1,4 @@
-// 1) Defina uma estrutura para representar as informaÁıes de um cart„o de crÈdito. VocÍ precisa apenas criar a estrutura com os dados e tipos apropriados. N„o È necess·rio criar um programa para utiliz·-la.
+// 1) Defina uma estrutura para representar as informa√ß√µes de um cart√£o de cr√©dito. Voc√™ precisa apenas criar a estrutura com os dados e tipos apropriados. N√£o √© necess√°rio criar um programa para utiliz√°-la.
 
 /*
 #include <stdio.h>
@@ -77,10 +77,10 @@ int main ()
 }
 */
 
-// 3) Considerando a estrutura do exercÌcio (2) e a declaraÁ„o:
-// medidas Jo„o, Maria;
-// -> Escreva instruÁıes para atribuir: 1.78 ‡ altura de Jo„o; 1.64 ‡ altura de Maria; 75 ao peso de Jo„o; 59 ao peso de Maria.
-// -> Escreva um conjunto de instruÁıes para imprimir a mÈdia das alturas e a mÈdia dos pesos de Jo„o e Maria.
+// 3) Considerando a estrutura do exerc√≠cio (2) e a declara√ß√£o:
+// medidas Jo√£o, Maria;
+// -> Escreva instru√ß√µes para atribuir: 1.78 √† altura de Jo√£o; 1.64 √† altura de Maria; 75 ao peso de Jo√£o; 59 ao peso de Maria.
+// -> Escreva um conjunto de instru√ß√µes para imprimir a m√©dia das alturas e a m√©dia dos pesos de Jo√£o e Maria.
 
 /*
 #include <stdio.h>
@@ -121,15 +121,15 @@ int main()
     printf("Peso: %.2f kg\n", maria.peso);
     printf("Altura: %.1f cm\n", maria.altura);
 
-    printf("\nMÈdia das alturas: %.1f cm\n", media_alturas);
-    printf("MÈdia dos pesos: %.2f kg\n", media_pesos);
+    printf("\nM√©dia das alturas: %.1f cm\n", media_alturas);
+    printf("M√©dia dos pesos: %.2f kg\n", media_pesos);
 
     return 0;
 }
 */
 
-// 4) FaÁa um programa (funÁ„o principal) para leitura, via teclado, dos dados de um atleta. Os dados a serem guardados na estrutura atleta s„o os seguintes: nome, medidas (estrutura definida
-// no exercÌcio 2), esporte praticado e idade. Ao final, imprima estas informaÁıes na tela. 
+// 4) Fa√ßa um programa (fun√ß√£o principal) para leitura, via teclado, dos dados de um atleta. Os dados a serem guardados na estrutura atleta s√£o os seguintes: nome, medidas (estrutura definida
+// no exerc√≠cio 2), esporte praticado e idade. Ao final, imprima estas informa√ß√µes na tela. 
 
 /*
 #include <stdio.h>
@@ -176,8 +176,8 @@ int main()
 */
 
 // 5) a) Crie uma estrutura chamada ponto contendo apenas as coordenadas x e y (inteiros) do ponto.
-// b) FaÁa uma funÁ„o que receba dois pontos por par‚metro e retorne a dist‚ncia entre eles.
-// c) FaÁa um programa que declare 2 pontos, leia as coordenadas x e y de cada um e chame a funÁ„o criada para calcular a dist‚ncia entre eles. Apresente no final a dist‚ncia entre os dois pontos.
+// b) Fa√ßa uma fun√ß√£o que receba dois pontos por par√¢metro e retorne a dist√¢ncia entre eles.
+// c) Fa√ßa um programa que declare 2 pontos, leia as coordenadas x e y de cada um e chame a fun√ß√£o criada para calcular a dist√¢ncia entre eles. Apresente no final a dist√¢ncia entre os dois pontos.
 
 /*
 #include <stdio.h>
@@ -221,8 +221,8 @@ int main()
 }
 */
 
-// 6) Utilizando a estrutura ponto definida no exercÌcio 5, faÁa uma funÁ„o que receba 2 pontos e retorne o ponto mais prÛximo da origem. Em seguida, modifique o programa principal para ler 4 pontos e imprimir 
-// apenas as coordenadas do ponto mais prÛximo da origem.
+// 6) Utilizando a estrutura ponto definida no exerc√≠cio 5, fa√ßa uma fun√ß√£o que receba 2 pontos e retorne o ponto mais pr√≥ximo da origem. Em seguida, modifique o programa principal para ler 4 pontos e imprimir 
+// apenas as coordenadas do ponto mais pr√≥ximo da origem.
 
 /*
 #include <stdio.h>
@@ -290,7 +290,7 @@ int main()
 }
 */
 
-// 7) Utilizando a estrutura medidas definida no exercÌcio 2, faÁa um programa que leia a altura e o peso de 6 pessoas e imprima a mÈdia da altura e a mÈdia do peso do grupo.
+// 7) Utilizando a estrutura medidas definida no exerc√≠cio 2, fa√ßa um programa que leia a altura e o peso de 6 pessoas e imprima a m√©dia da altura e a m√©dia do peso do grupo.
 
 /*
 #include <stdio.h>
@@ -332,76 +332,12 @@ int main()
     float mediaAltura = somaAltura / 6;
     float mediaPeso = somaPeso / 6;
 
-    printf("\nMÈdia da altura do grupo: %.2f cm\n", mediaAltura);
-    printf("MÈdia do peso do grupo: %.2f kg\n", mediaPeso);
+    printf("\nM√©dia da altura do grupo: %.2f cm\n", mediaAltura);
+    printf("M√©dia do peso do grupo: %.2f kg\n", mediaPeso);
 
     return 0;
 }
 */
 
-// 8) FaÁa um programa que receba trÍs nomes (de no m·ximo 100 caracteres cada) e as idades das respectivas pessoas em um vetor de estruturas. ApÛs o recebimento, listar os trÍs nomes armazenados neste
+// 8) Fa√ßa um programa que receba tr√™s nomes (de no m√°ximo 100 caracteres cada) e as idades das respectivas pessoas em um vetor de estruturas. Ap√≥s o recebimento, listar os tr√™s nomes armazenados neste
 // vetor por ordem crescente de idades.
-
-/*
-#include <stdio.h>
-#include <string.h>
-
-struct pessoa
-{
-    char nome[101];
-    int idade;
-};
-
-void bubbleSort(struct pessoa vetor[], int tamanho)
-{
-    int i, j;
-    struct pessoa temp;
-
-    for (i = 0; i < tamanho - 1; i++)
-    {
-        for (j = 0; j < tamanho - 1 - i; j++)
-        {
-            if (vetor[j].idade > vetor[j + 1].idade)
-            {
-                temp = vetor[j];
-                vetor[j] = vetor[j + 1];
-                vetor[j + 1] = temp;
-            }
-        }
-    }
-}
-
-int main()
-{
-    struct pessoa pessoas[3];
-    int i;
-
-    printf("Digite os dados das pessoas:\n");
-
-    for (i = 0; i < 3; i++)
-    {
-        printf("Pessoa %d\n", i + 1);
-
-        printf("Nome: ");
-        fflush(stdin);
-        fgets(pessoas[i].nome, 101, stdin);
-        pessoas[i].nome[strcspn(pessoas[i].nome, "\n")] = '\0'; // Remover o caractere de nova linha
-
-        printf("Idade: ");
-        scanf("%d", &pessoas[i].idade);
-    }
-
-    bubbleSort(pessoas, 3);
-
-    printf("\nNomes em ordem crescente de idades:\n");
-    for (i = 0; i < 3; i++)
-    {
-        printf("%s\n", pessoas[i].nome);
-    }
-
-    return 0;
-}
-*/
-
-
-
